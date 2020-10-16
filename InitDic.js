@@ -60,7 +60,6 @@ function search() {
         }
         else{
             document.getElementById("show").innerHTML = "<b>" + searchedWord + "</b> is unknowned";
-            break;
         }
     }
 }
