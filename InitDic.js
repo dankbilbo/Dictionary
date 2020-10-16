@@ -53,11 +53,14 @@ function search() {
     for (let i = 0; i < arrEng.length; i++) {
         if (arrEng[i] == searchedWord) {
             document.getElementById("show").innerHTML = arrEng[i] + " (English) : " + arrVIE[i] + "(Tiếng Việt)";
+            break;
         }else if(arrVIE[i] == searchedWord){
             document.getElementById("show").innerHTML = arrVIE[i] + " (Tiếng Việt) : " + arrEng[i] + "(English)";
+            break;
         }
         else{
             document.getElementById("show").innerHTML = "<b>" + searchedWord + "</b> is unknowned";
+            break;
         }
     }
 }
